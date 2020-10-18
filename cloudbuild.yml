@@ -1,0 +1,5 @@
+steps:
+
+- id: "Rodando Testes"
+  name: 'golang'
+  args: ['go', 'test', './...']
