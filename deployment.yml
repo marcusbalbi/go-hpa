@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: code-education-go-hpa
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: code-education-go-hpa
+  template:
+    metadata:
+      labels:
+        app: code-education-go-hpa
+    spec:
+      containers:
+        - name: app
+          image: marcusbalbi/go-hpa:latest
+          ports:
+            - containerPort: 80
