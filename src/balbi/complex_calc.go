@@ -7,7 +7,12 @@ import (
 
 func ComplexCalc(value float64, times int) float64 {
 	v := value
-	fmt.Println("Iniciando Cálculo com ", v , "Iterando ", times, " vezes")
+
+	if value < 0 || times < 0{
+		return 0
+	}
+
+	fmt.Println("Iniciando Calculo com ", v , "Iterando ", times, " vezes")
 	for i := 0; i < times; i++ {
 		v = math.Sqrt(v)
 		// fmt.Println("O valor na iteração ", i , " é ", v)
