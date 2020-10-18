@@ -9,7 +9,7 @@ func ComplexCalc(value float64, times int) float64 {
 	v := value
 
 	if value < 0 || times < 0{
-		return 0
+		return 2
 	}
 
 	fmt.Println("Iniciando Calculo com ", v , "Iterando ", times, " vezes")
