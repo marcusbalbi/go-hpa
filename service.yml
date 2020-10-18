@@ -1,10 +1,10 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: code-education-go-hpa-service
+  name: go-hpa
 spec:
   type: LoadBalancer
   ports:
     - port: 80
   selector:
-    app: code-education-go-hpa
+    app: go-hpa

@@ -1,12 +1,12 @@
 apiVersion: autoscaling/v1
 kind: HorizontalPodAutoscaler
 metadata:
-  name: code-education-go-hpa
+  name: go-hpa
 spec:
   maxReplicas: 6
   minReplicas: 1
   scaleTargetRef:
     apiVersion: apps/v1
     kind: Deployment
-    name: code-education-go-hpa
+    name: go-hpa
   targetCPUUtilizationPercentage: 15
