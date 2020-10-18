@@ -14,6 +14,6 @@ func handler(w http.ResponseWriter, r *http.Request) {
 
 func main() {
 	http.HandleFunc("/", handler)
-	fmt.Println("Servidor ouvindo na porta 8000")
-	log.Fatal(http.ListenAndServe(":8000", nil))
+	fmt.Println("Servidor ouvindo na porta 80")
+	log.Fatal(http.ListenAndServe(":80", nil))
 }
