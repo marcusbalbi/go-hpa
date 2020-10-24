@@ -9,7 +9,7 @@ import (
 
 func handler(w http.ResponseWriter, r *http.Request) {
 	balbi.ComplexCalc(0.00000001, 100000000)
-	fmt.Fprintf(w, "Code Education Rocks")
+	fmt.Fprintf(w, "Code Education Rocks!!!")
 }
 
 func main() {
